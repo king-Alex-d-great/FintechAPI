@@ -35,6 +35,7 @@ namespace OnlineBankApi.Controllers
                     TimeStamp = t.TimeStamp,
                     TransactionMode = t.TransactionMode,
                     TransactionType = t.TransactionType
+
                 }).ToList();
                 return Ok(transactionDTO);
             }

@@ -29,7 +29,7 @@ namespace OnlineBankApi
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.ConfigureSqlContext(configuration);
+            services.ConfigureSqlContext(configuration);            
             services.AddControllers();
            
             services.ConfigureCORS(); 

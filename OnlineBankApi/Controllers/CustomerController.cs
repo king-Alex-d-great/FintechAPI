@@ -70,6 +70,7 @@ namespace OnlineBankApi.Controllers
             try
             {
                var customer = repository.Customers.GetCustomerWithAccountId(accountId);
+
                 var customerDTO = new CustomerTransferObject
                 {
                     AccountId = customer.AccountId,

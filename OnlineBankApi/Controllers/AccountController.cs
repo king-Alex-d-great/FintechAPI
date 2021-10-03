@@ -80,6 +80,7 @@ namespace OnlineBankApi.Controllers
             {
                 var account = _repositoryManager.Accounts.GetAccount(accNumber);
                 if (account == null) return NotFound();
+
                 var accountDTO = new AccountTransferObject()
                 {
                     AccountNumber = account.AccountNumber,
